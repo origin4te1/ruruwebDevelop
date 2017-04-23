@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+body {
+	background-image: url(../images/bgBedroom.jpg);
+	background-origin: content-box;
+	background-size: cover;
+}
+
+#header div#gNav #gNavInner {
+	background:  url(../images/cloudOff.png) repeat-x bottom;
+}
+#header div#gNav #gNavInner:hover,
+#header div#gNav.hover #gNavInner {
+	background:  url(../images/cloudOn.png) repeat-x bottom;
+}
+
+.bird {
+	background-image: url(../images/nav7Photo.png);
+}
+
+header#pageTitle {
+	width: 31.25%;
+	max-width: 300px;
+}
+
+footer p {
+	color: #FFF;
+}
+footer {
+	width: 100%;
+	height: 128px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	z-index: -10;
+}
+#footerInnerWrapper {
+	position: absolute;
+	bottom: 0;
+	z-index: -10;
+	height: 128px;
+	width: 100%;
+}

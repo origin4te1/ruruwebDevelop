@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+#socialBoxAlt {
+width: 40px;
+left: 1%!important;
+right: auto!important;
+margin-left: 0;
+margin-top: 0;
+top: 55px;
+}

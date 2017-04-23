@@ -1,0 +1,415 @@
+@charset "utf-8";
+
+/* base */
+html,body {
+	font-family: "Meiryo","Meiryo UI","Hiragino Kaku Gothic Pro W3","HiraKakuPro-W3","Hiragino Kaku Gothic Pro","MS UI Gothic","MS P Gothic","MS Gothic";
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100%;
+	min-height: 500px;
+}
+/* Selected Text */
+img::selection {
+background: transparent;
+color: rgb(255, 255, 255);
+}
+img::-moz-selection {
+background: transparent;
+color: rgb(255, 255, 255);
+}
+#social {
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/twitter.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+#loading {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	background: url(../images/RURULoading.gif) 50% 40% no-repeat;
+	background-color: #fff;
+}
+.hide-text {
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+#wrapper {
+	background: url(../images/bgTopfix01_mini.jpg) repeat top center;
+	height: 100%;
+}
+#bgstar01inner {
+	opacity: 0;
+	position: absolute;
+	min-width: 649px;
+	margin: 0px;
+	left: 0;
+	top: 8%;
+	width: 100%;
+	height: auto;
+	right: auto;
+	bottom: auto;
+	-webkit-transition: top 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	   -moz-transition: top 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	    -ms-transition: top 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	     -o-transition: top 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	        transition: top 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+}
+.csstransitions #bgstar01inner.init{
+	top: 23%;
+}
+#bgstar02inner {;
+	opacity: 0;
+	position: absolute;
+	min-width: 649px;
+	margin: 0px;
+	left: 0;
+	top: 8%;
+	width: 100%;
+	height: auto;
+	right: auto;
+	bottom: auto;
+	-webkit-transition: top 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	   -moz-transition: top 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	    -ms-transition: top 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	     -o-transition: top 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	        transition: top 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000);/* easeInOutCubic */
+}
+.csstransitions #bgstar02inner.init{
+	top: 18%;
+}
+#bgstar01inner img,
+#bgstar02inner img {
+	width: 100%;
+}
+#bgHeader {
+	height: 132px;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0);
+	top: 0;
+}
+#bgHeaderInner {
+	background: url(../images/flag.png) repeat-x;
+	bottom: 0;
+	height: 100px;
+}
+#bgHeaderInner img{
+	position: relative;
+	left: 80%;
+	z-index: -100;
+}
+nav {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	-webkit-transition: bottom 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	   -moz-transition: bottom 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	    -ms-transition: bottom 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	     -o-transition: bottom 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	        transition: bottom 3000ms cubic-bezier(0.645, 0.045, 0.355, 1.000);/* easeInOutCubic */
+}
+nav.init {
+	bottom: -70%;
+}
+/** inputs and textarea**/
+input:not([type="submit"]),
+textarea{
+	font-family: "Meiryo","Meiryo UI","Hiragino Kaku Gothic Pro W3","HiraKakuPro-W3","Hiragino Kaku Gothic Pro","MS UI Gothic","MS P Gothic","MS Gothic";
+	outline:none;
+	display:block;
+	width:380px;
+	padding:4px 8px;
+	border:1px dashed #DBDBDB;
+	color:#3F3F3F;
+	border-radius:2px;
+	-moz-box-shadow:0 0 0 #fff inset;
+	-webkit-box-shadow:0 0 0 #fff inset;
+	box-shadow:0 0 0 #fff inset;
+	-moz-transition:background 0.3s linear,box-shadow 0.5s linear, border 0.7s linear;
+	-webkit-transition:background 0.3s linear,box-shadow 0.5s linear, border 0.7s linear;
+	transition:background 0.3s linear,box-shadow 0.5s linear, border 0.7s linear;
+}
+textarea {
+	width: 648px;
+}
+input:not([type="submit"]):active,
+textarea:active,
+input:not([type="submit"]):focus,
+textarea:focus,
+input:not([type="submit"]):hover,
+textarea:hover{
+	background:#F7F7F7;
+	border:dashed 1px #969696;
+	-moz-box-shadow:2px 2px 7px #E8E8E8 inset;
+	-webkit-box-shadow:2px 2px 7px #E8E8E8 inset;
+	box-shadow:2px 2px 7px #E8E8E8 inset;
+}
+input:not([type="submit"]) {
+	height: 20px;
+}
+
+textarea{
+	min-height:150px;
+	resize:vertical
+}
+/* placeholder */
+::-webkit-input-placeholder  {
+	color:#bababa;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+	color:#bababa;
+}
+form p label{
+	color:#7f7e7e;
+	font-size: 12px;
+	-webkit-transition: color 0.6s ease;
+	-moz-transition: color 0.6s ease;
+	transition: color 0.6s ease;
+	padding-bottom: 3px;
+}
+form p label:hover{
+	color:#191919;
+}
+form p > $input:hover {
+	color:#191919;
+}
+form p {
+	margin-bottom:20px;
+}
+.indication{
+	color:#878787;
+	font-size:12px;
+	font-style:italic;
+	text-align:right;
+	padding-right:10px;
+}
+.required{
+	color:#E5224C;
+}
+/** Styling the send button **/
+input[type=submit]{
+	margin-left: 551px;
+	cursor: pointer;
+	background: none;
+	border: none;
+	color: #767676;
+	font-size: 12px;
+	padding: 10px 16px;
+	border: 1px dashed #cecece;
+	text-shadow: 0px 1px 1px #e0e0e0;
+	background: rgb(240,240,240);
+	background: linear-gradient(top, rgba(240,240,240,1) 1%,rgba(235,235,235,1) 100%);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	behavior: url(PIE.htc) ;
+	-webkit-transition: all 0.2s linear, visibility 0s ease;
+	-moz-transition: all 0.2s linear, visibility 0s ease;
+	-o-transition: all 0.2s linear, visibility 0s ease;
+	transition: all 0.2s linear, visibility 0s ease;
+	display: inline;
+	float:right;
+}
+
+input[type=submit]:hover{
+	color:#686868;
+	border-color: #b8b8b8;
+	background: linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(235,235,235,1) 100%);
+}
+
+input[type=submit]:active,
+input[type=submit]:focus{
+	position:relative;
+	top:1px;
+	color:#515151;
+	background: linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(242,242,242,1) 100%);
+}
+input#sendBtn {
+	margin-left: 542px;
+}
+/* contact form
+------------------------------------------------------------------------- */
+article.contact {
+	width: 668px;
+	padding: 25px;
+	margin-top: -234px;
+	margin-left: -359px;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	bottom: auto;
+	background: url(../images/ruruLogoAlt.png) no-repeat,url(../images/bgContact.jpg) repeat;
+	background-position: 460px 40px, 0 0;
+	border:solid 0px transparent;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-transition: left 0.9s ease, top 0.9s ease;
+	-moz-transition:    left 0.9s ease, top 0.9s ease;
+	-ms-transition:     left 0.9s ease, top 0.9s ease;
+	-o-transition:     left 0.9s ease, top 0.9s ease;
+	transition:       left 0.9s ease, top 0.9s ease;
+	visibility: hidden;
+	overflow: visible;
+	z-index: 9999;
+}
+article.contact h1 {
+	background:url(../images/contactform.png) no-repeat;
+}
+article.contact p.bird3 {
+	width: 90px;
+	height: 108px;
+	position: absolute;
+	top: -81px;
+	left: -45px;
+	background: url(../images/bird03.png) no-repeat;
+}
+.csstransitions article.contact p.active,
+.csstransitions article.contact p:hover {
+	-moz-animation: fly3 0.3s steps(4) 0s infinite;
+	-webkit-animation: fly3 0.3s steps(4) 0s infinite;
+	-o-animation: fly3 0.3s steps(4) 0s infinite;
+	-ms-animation: fly3 0.3s steps(4) 0s infinite;
+	animation: fly3 0.2s steps(4) 0s infinite;
+}
+@-moz-keyframes fly3 {
+    from { background-position: 0 0; }
+    to { background-position: -360px 0; }
+}
+
+@-webkit-keyframes fly3 {
+    from { background-position: 0 0; }
+    to { background-position: -360px 0; }
+}
+article.contactActive {
+	visibility: visible;
+	-webkit-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-moz-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-pie-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+}
+.csstransitions article.contactActive {
+	top: 400px;
+	left: 50%;
+}
+article.contact form input([type=submit]) {
+	margin-left: 542px;
+}
+
+.closeBtn {
+	width: 40px;
+	height: 41px;
+	cursor: pointer;
+	background: url(../images/btnCloseWood_hir.png) no-repeat;
+	background-position: 0 0;
+	background-size: 100%;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+.closeBtn:hover {
+	background-position: 0 0;
+}
+input[type=radio] {
+	display:none;
+}
+
+.contact p,
+.profile p {
+	font-size: 12px;
+	line-height: 2.0;
+	padding: 0 0 10px 0;
+	font-family: "Meiryo","Meiryo UI","Hiragino Kaku Gothic Pro W3","HiraKakuPro-W3","Hiragino Kaku Gothic Pro","MS UI Gothic","MS P Gothic","MS Gothic";
+}
+/* profile
+------------------------------------------------------------------------- */
+article.profile {
+	width: 417px;
+	padding: 25px;
+	margin-top: -234px;
+	margin-left: -233px;
+	position: fixed;
+	top: 0;
+	left: 100%;
+	background: url(../images/ruruLogoAlt.png) no-repeat,url(../images/bgContact.jpg) repeat;
+	background-position: 220px 20px, 0 0;
+	border:solid 0px transparent;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-transition: left 0.9s ease, top 0.9s ease;
+	-moz-transition:    left 0.9s ease, top 0.9s ease;
+	-ms-transition:     left 0.9s ease, top 0.9s ease;
+	-o-transition:     left 0.9s ease, top 0.9s ease;
+	transition:       left 0.9s ease, top 0.9s ease;
+	visibility: hidden;
+	overflow: visible;
+	z-index: 1200;
+}
+article.profile h1 {
+	margin-bottom: 50px;
+	background: url(../images/profileTitle.png) no-repeat;
+}
+article.profile p {
+	font-size: 12px;
+	line-height: 2.0;
+	padding: 0 0 10px 0;
+}
+article.profile p a {
+	cursor: pointer;
+}
+.csstransitions article.profile p.active,
+.csstransitions article.profile p.bird3:hover {
+	-moz-animation: fly3 0.3s steps(4) 0s infinite;
+	-webkit-animation: fly3 0.3s steps(4) 0s infinite;
+	-o-animation: fly3 0.3s steps(4) 0s infinite;
+	-ms-animation: fly3 0.3s steps(4) 0s infinite;
+	animation: fly3 0.2s steps(4) 0s infinite;
+}
+article.profileActive {
+	visibility: visible;
+	-webkit-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-moz-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-pie-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+}
+.csstransitions article.profileActive {
+	top: 50%;
+	left: 50%;
+}
+article.profile p.bird3 {
+	width: 90px;
+	height: 108px;
+	position: absolute;
+	top: -81px;
+	left: -45px;
+	background: url(../images/bird03.png) no-repeat;
+}
+.csstransitions article.end {
+	top: -10%;
+	left: -10%;
+}
+#Stage_top_1 {
+	min-width: 649px !important;
+}
+div.wpcf7-mail-sent-ok {
+margin-top: 100px !important;
+margin-bottom: 150px !important;
+margin-left: auto !important;
+margin-right: auto !important;
+text-align: center !important;
+padding: 10px !important;
+}

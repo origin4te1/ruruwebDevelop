@@ -1,0 +1,36 @@
+@charset "utf-8";
+#header div#gNav #gNavInner {
+height: 62.5px!important;
+background: url(../images/cloudOff.png) repeat-x bottom!important;
+background-size: 180px!important;
+}
+#header div#gNav #gNavInner:hover,
+#header div#gNav.hover #gNavInner {
+background: url(../images/cloudOff.png) repeat-x bottom!important;
+background-size: 180px!important;
+}
+#gNavBox li#nav6 a {
+	background-image: url(../images/picture_mob.svg)!important;
+	background-position: 10px 12px!important;
+}
+#gNavBox li#nav7 a {
+	background-image: url(../images/photo_mob.svg)!important;
+	background-position: 10px 7px!important;
+}
+#socialBoxAlt {
+width: 40px!important;
+left: 1%!important;
+right: auto!important;
+margin-left: 0!important;
+margin-top: 0!important;
+top: 55px!important;
+}
+footer {
+	height:64px;
+}
+#footerInnerWrapper {
+	position: absolute;
+	bottom: 0;
+	z-index: -10;
+	height: 64px;
+}

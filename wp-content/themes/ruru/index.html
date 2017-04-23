@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>RURU | TOP</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="utf-8" src="edge_includes/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/kofusugimoto.ruru.js"></script>
+<!--Adobe Edge Runtime-->
+<script type="text/javascript" charset="utf-8" src="top_edgePreload.js"></script>
+<style>
+.edgeLoad-top {
+	visibility:hidden;
+}
+</style>
+<!--Adobe Edge Runtime End-->
+<!--<script type="text/javascript">
+		$(function() {
+			$('body').mousemove(function(e) {
+				var cx = $(this).width() / 1000;
+				var dx = e.clientX - cx;
+				var mx = -1;
+				var bsz = $(window).width();
+				$('#bgHeader').css('marginLeft', (dx - bsz / 2) * mx * 0.01);
+				$('#bgHeader').css('width', bsz + ((dx - bsz / 2) * mx * 0.01) * mx);
+			});
+		});
+</script>-->
+</head>
+
+<body>
+<div id="loading" class="hide-text">loading</div>
+<div id="wrapper">
+	<div id="bgHeader">
+		<div id="bgHeaderInner">
+			<img id="moon" src="images/moon.png" width="132" height="609" alt="moon">
+		</div>
+	</div>
+	<article class="profile">
+		<h1>RURU profile</h1>
+		<p class="hide-text bird3" title="I'll just introduce myself">I'll just introduce myself</p>
+		<p>1985年生まれ</p>
+		<div class="closeBtn">
+			<p class="hide-text"><a>閉じる</a></p>
+		</div>
+	</article>
+	<article class="contact">
+		<p class="hide-text bird3" title="get in touch!">get in touch!</p>
+		<form action=" " method="post"  autocomplete="on">
+			<p>
+				<label for="username" class="user" > Name <span class="required">*</span></label>
+				<input type="text" name="username" id="username"  required="required" placeholder="お名前を入力してください"  />
+			</p>
+			<p>
+				<label for="usermail" class="email"> E-mail <span class="required">*</span></label>
+				<input type="email" name="usermail" id="usermail" placeholder="メールアドレスを入力してください" required="required"  />
+			</p>
+			<p>
+				<label for="message" class="comment"> Message <span class="required">*</span></label>
+				<textarea id="message" cols="20" rows="5" placeholder="メッセージを入力してください"  required="required" ></textarea>
+			</p>
+			<p class="indication"><span class="required">*</span> 必須項目</p>
+			<input type="submit" value="SEND A MESSAGE" id="sendBtn"/>
+			<div class="closeBtn">
+				<p class="hide-text"><a>閉じる</a></p>
+			</div>
+		</form>
+	</article>
+	<nav>
+		<div id="Stage" class="top"></div>
+	</nav>
+</div>
+</body>
+</html>

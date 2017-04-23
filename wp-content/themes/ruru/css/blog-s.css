@@ -1,0 +1,356 @@
+@charset "utf-8";
+
+header#pageTitle {
+min-width: 180px;
+margin: 5px auto 5px;
+}
+#wrapper {
+min-width: 0px;
+}
+#singleBox {
+margin-right: 0;
+margin-top: -12px;
+float: none;
+}
+article.singleContent {
+margin-right: 0;
+}
+aside {
+	float: none;
+	width: auto;
+}
+.sideContent {
+	width: auto;
+margin-left: 0;
+float: none;
+}
+.sideContent header figure {
+	display:none;
+}
+ul.postInfo {
+height: 32px;
+}
+ul.postInfo li.date,
+ul.postInfo li.category {
+	display: block;
+	float: none;
+}
+.profile {
+	display: none;
+}
+header#header {
+height: 20px;
+}
+#header div#gNav {
+height: 38px;
+width: 100%;
+position: absolute;
+left: 0%;
+padding-bottom: 20px;
+overflow: visible;
+top: -38px;
+z-index: 10;
+}
+#header div#gNav #gNavInner {
+height: 62.5px;
+background: url(../images/roof.png) repeat-x bottom;
+background-size: 180px;
+width: 100%;
+}
+#header div#gNav #gNavBox {
+min-width: 300px;
+}
+#header div#gNav h1#logo {
+padding: 6px 0 0;
+}
+#header div#gNav ul li, #header div#gNav h1 {
+float: left;
+padding: 12.5px 0 0;
+text-align: center;
+margin-right: 0.208%;
+}
+#header div#gNav #gNavInner:hover, #header div#gNav.hover #gNavInner {
+background: url(../images/roof.png) repeat-x bottom;
+background-size: 180px;
+}
+.csstransitions #header div#gNav:hover, .csstransitions #header div#gNav.hover {
+top: -38.5px;
+}
+div#gNavBox {
+width: 0.1px!important;
+min-width: 0px!important;
+position: fixed!important;
+top: 4%!important;
+right: -11px!important;
+z-index: 100!important;
+border: 11px solid transparent;
+-moz-border-image: url("../images/woodframe.jpg") 23/11px 0px 11px 11px;
+-webkit-border-image: url("../images/woodframe.jpg") 23/11px 0px 11px 11px;
+-o-border-image: url("../images/woodframe.jpg") 23/11px 0px 11px 11px;
+border-image: url("../images/woodframe.jpg") 23/11px 0px 11px 11px;
+-webkit-box-shadow: 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+-moz-box-shadow: 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+box-shadow: 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+background-color: #fff;
+display: none;
+-moz-transition: width 0.6s ease, min-width 0.6s ease;
+-webkit-transition: width 0.6s ease, min-width 0.6s ease;
+-o-transition: width 0.6s ease, min-width 0.6s ease;
+transition: width 0.6s ease, min-width 0.6s ease;
+}
+
+div#gNavBox.on {
+	display:block;
+}
+div#gNavBox.open {
+width: 228px!important;
+	min-width: 228px!important;
+}
+#gNavBox img{
+	opacity:0!important;
+	height: 50px!important;
+}
+#gNavBox h1 {
+width: 228px!important;
+clear: both!important;
+float: none!important;
+margin: 0!important;
+padding: 0!important;
+height: 50px!important;
+line-height: 50px!important;
+border-bottom: 1px solid #e8e8e6;
+}
+#menuIcon {
+width: 38px;
+height: 36px;
+max-width: 38px;
+min-width: 38px;
+position: fixed;
+margin-top: 0px;
+top: 4%;
+right: 0!important;
+z-index: 8000;
+cursor: pointer;
+-moz-transition: all 0.6s ease;
+-webkit-transition: all 0.6s ease;
+-o-transition: all 0.6s ease;
+transition: all 0.6s ease;
+}
+#menuIcon.on {
+top: 4%;
+right: 228px!important;
+margin-right: -19px;
+margin-top: -19px;
+}
+#menuIcon span {
+width: 38px;
+height: 36px;
+display: block;
+background: url(../images/btnMenu_hir.png) no-repeat 0 0;
+background-size: 100%;
+-moz-transition: all 0.6s ease;
+-webkit-transition: all 0.6s ease;
+-o-transition: all 0.6s ease;
+transition: all 0.6s ease;
+}
+#menuIcon.on span {
+	background: url(../images/btnCloseWood_hir.png) no-repeat 0 0;
+	background-size: 100%;
+}
+#gNavBox h1 a,
+#gNavBox li a{
+background-repeat: no-repeat!important;
+background-size: auto!important;
+-moz-transition: background-image 0.6s ease;
+-webkit-transition: background-image 0.6s ease;
+-o-transition: background-image 0.6s ease;
+transition: background-image 0.6s ease;
+background-color: #fff;
+}
+#gNavBox h1 a{
+	background-image: url(../images/RURU_mob.svg);
+	background-position: 11px 12px;
+}
+#gNavBox li#nav2 a {
+	background-image: url(../images/profile_mob.svg);
+	background-position: 10px 8px;
+}
+#gNavBox li#nav3 a {
+	background-image: url(../images/blog_mob.svg);
+	background-position: 11px 8px;
+}
+#gNavBox li#nav6 a {
+	background-image: url(../images/picture_mob.svg);
+	background-position: 10px 12px;
+}
+#gNavBox li#nav7 a {
+	background-image: url(../images/needlework_mob.svg);
+	background-position: 11px 7px;
+}
+#gNavBox li#nav8 a {
+	background-image: url(../images/photo_mob.svg);
+	background-position: 10px 7px;
+}
+#gNavBox li#nav5 a{
+	background-image: url(../images/contact_mob.svg);
+	background-position: 11px 15px;
+}
+#gNavBox ul li,
+#navSketch.mob {
+width: 228px!important;
+clear: both!important;
+float: none!important;
+margin: 0!important;
+padding: 0!important;
+line-height: 50px!important;
+border-bottom: 1px solid #e8e8e6!important;
+font-weight: normal!important;
+font-family: "MuseoSans_light"!important;
+}
+#gNavBox a{
+width: 228px!important;
+height: 50px!important;
+display: block!important;
+}
+#gNavBox ul li#nav4 {
+border-bottom: none!important;
+}
+#gNavBox ul li#nav4 > a{
+display: none!important;
+}
+#gNavBox ul li ul li{
+width: 228px!important;
+left: auto!important;
+right: auto!important;
+bottom: auto!important;
+position: relative!important;
+clear: both!important;
+float: none!important;
+margin: 0!important;
+padding: 0!important;
+height: 50px!important;
+line-height: 50px!important;
+border-bottom: 1px solid #e8e8e6!important;
+font-weight: normal!important;
+font-family: "MuseoSans_light"!important;
+}
+#pagenation {
+margin-right: 0;
+}
+p.oldpage {
+padding-left: 0;
+padding-right: 0;
+}
+p.newpage {
+margin-right: 0;
+padding-left: 0;
+padding-right: 0;
+}
+/*
+------------------------End Navigation----------------------*/
+#socialBox ul, #socialBoxAlt ul {
+width: 40px;
+height: auto;
+}
+#socialBox ul li, #socialBoxAlt ul li {
+display: block;
+width: 32.5px;
+height: 32.5px;
+float: none;
+}
+a.socialIcon {
+width: 32.5px;
+height: 32.5px;
+}
+.fb {
+background: url(../images/socialIconFb_alt.png) no-repeat 0 0;
+background-size: 65px;
+}
+.fb:hover {
+background-position: -32.5px 0;
+}
+.tw {
+background: url(../images/socialIconTw_alt.png) no-repeat 0 0;
+background-size: 65px;
+}
+.tw:hover {
+	background-position: -32.5px 0;
+}
+#socialBox {
+width: 40px;
+height: auto;
+left: 1%!important;
+right: auto!important;
+margin-left: 0;
+margin-top:  -72px;
+top: 25px;
+position: absolute;
+}
+/*
+------------------------Footer------------------------------*/
+footer {
+width: 100%;
+height: 80px;
+text-align: center;
+position: absolute;
+bottom: 0;
+z-index: -10;
+}
+#bgTable {
+min-width: 75px;
+left: 64%;
+}
+#bgKtool {
+	min-width: 83px;
+	position: absolute;
+}
+#sRing {
+left: 70%;
+}
+#pool {
+bottom: auto;
+left: 17%;
+}
+footer p {
+width: 300px;
+margin-left: -150px;
+bottom: 8px;
+padding-bottom: 0;
+}
+footer small {
+font-size: 10px;
+}
+#footerInnerWrapper {
+position: absolute;
+bottom: 0;
+z-index: -10;
+height: 80px;
+width: 100%;
+}
+footer #footerInnerYard {
+height: 80px;
+background: url(../images/footerYard2.png) repeat-x bottom;
+margin-bottom: 0px;
+z-index: 5;
+background-size: 38%;
+}
+footer #footerInnerYard2 {
+display:none;
+height: 0;
+background: url(../images/footerYard2.png) repeat-x bottom;
+position: relative;
+margin-bottom: 0;
+z-index: 10;
+display: none;
+}
+footer #animal {
+height: 305px;
+width: 100%;
+margin-bottom: 0;
+margin-top: -305px;
+background: url(../images/footerAnimal.png) repeat-x bottom;
+background-size: 100%;
+}
+footer #animal2 {
+display: none;
+}

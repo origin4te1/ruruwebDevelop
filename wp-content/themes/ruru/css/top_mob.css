@@ -1,0 +1,791 @@
+@charset "utf-8";
+html,
+body {
+	height: 100%;
+}
+#loading {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+	background: url(../images/RURULoading.gif) 50% 40% no-repeat;
+	background-size: 200px;
+	background-color: #fff;
+}
+.hide-text {
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+/* common */
+#wrapper {
+	height: 100%;
+	min-height: 480px;
+	background: url(../images/bgStar_mob.png) no-repeat, url(../images/bg_mob_blue.jpg) repeat;
+	background-size: 100%, 100%;
+	position: relative;
+	-webkit-transition: min-height 0.6s ease;
+	   -moz-transition: min-height 0.6s ease;
+	     -o-transition: min-height 0.6s ease;
+	         transtion: min-height 0.6s ease;
+}
+#bgHeader {
+	width: 100%;
+	height: 75px;
+	padding-bottom: 405px;
+	background: url(../images/flag.png) repeat-x;
+	background-size: 1080px;
+}
+#navWrapper {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 480px;
+}
+nav {
+	position: relative;
+	width: 100%;
+	height: 480px;
+	overflow: visible;
+}
+
+nav img {
+	position: absolute;
+	margin: 0px;
+	top: auto;
+	height: auto;
+	right: auto;
+	bottom: 0px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.hide-text {
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.contact p,
+.profile p {
+	font-size: 12px;
+	line-height: 2.0;
+	padding: 0 0 10px 0;
+	font-family: "Meiryo","Meiryo UI",'Open Sans',"Hiragino Kaku Gothic Pro W3","HiraKakuPro-W3","Hiragino Kaku Gothic Pro","MS UI Gothic","MS P Gothic","MS Gothic";
+	font-weight: 400;
+}
+.bird2 {
+	width: 128px;
+	height: 125px;
+	display: inline-block;
+	background-image: url(../images/nav6New.png);
+}
+.csstransitions .bird2:hover {
+	-moz-animation: fly2 0.3s steps(4) 0s infinite;
+	-webkit-animation: fly2 0.3s steps(4) 0s infinite;
+	-o-animation: fly2 0.3s steps(4) 0s infinite;
+	-ms-animation: fly2 0.3s steps(4) 0s infinite;
+	animation: fly2 0.2s steps(4) 0s infinite;
+}
+.bird {
+	width: 220px;
+	height: 82px;
+	display: inline-block;
+	background-image: url(../images/nav7New.png);
+}
+.bird:hover {
+	-moz-animation: fly 0.3s steps(4) 0s infinite;
+	-webkit-animation: fly 0.3s steps(4) 0s infinite;
+	-o-animation: fly 0.3s steps(4) 0s infinite;
+	-ms-animation: fly 0.3s steps(4) 0s infinite;
+	animation: fly 0.2s steps(4) 0s infinite;
+}
+.bird3 {
+	width: 128px;
+	height: 125px;
+	display: inline-block;
+	background-image: url(../images/nav6Photo.png);
+}
+.bird3:hover {
+	-moz-animation: fly2 0.3s steps(4) 0s infinite;
+	-webkit-animation: fly2 0.3s steps(4) 0s infinite;
+	-o-animation: fly2 0.3s steps(4) 0s infinite;
+	-ms-animation: fly2 0.3s steps(4) 0s infinite;
+	animation: fly2 0.2s steps(4) 0s infinite;
+}
+@-moz-keyframes fly2 {
+
+    from { background-position: 0 0; }
+    to { background-position: -400% 0; }
+}
+
+@-webkit-keyframes fly2 {
+    from { background-position: 0 0; }
+    to { background-position: -400% 0; }
+}
+
+keyframes fly2 {
+    from { background-position: 0 0; }
+    to { background-position: -400% 0; }
+}
+@-moz-keyframes fly {
+    from { background-position: 0 0; }
+    to { background-position: -400% 0; }
+}
+
+@-webkit-keyframes fly {
+    from { background-position: 0 0; }
+    to { background-position: -400% 0; }
+}
+
+keyframes fly {
+    from { background-position: 0 0; }
+    to { background-position: -400% 0; }
+}
+
+ @-webkit-keyframes
+bird1 {
+ 0% {bottom: -130%;}
+ 50% {bottom: -160%;}
+ 100% {bottom: -130%;}
+}
+ @-moz-keyframes
+bird1 {
+ 0% {bottom: -130%;}
+ 50% {bottom: -160%;}
+ 100% {bottom: -130%;}
+}
+@-o-keyframes
+bird1 {
+ 0% {bottom: -130%;}
+ 50% {bottom: -160%;}
+ 100% {bottom: -130%;}
+}
+@-ms-keyframes
+bird1 {
+ 0% {bottom: -130%;}
+ 50% {bottom: -160%;}
+ 100% {bottom: -130%;}
+}
+@keyframes
+bird1 {
+ 0% {bottom: -130%;}
+ 50% {bottom: -160%;}
+ 100% {bottom: -130%;}
+}
+
+/* bird2 */
+
+ @-webkit-keyframes
+bird2 {
+ 0% {bottom: -220%;}
+ 50% {bottom: -250%;}
+ 100% {bottom: -220%;}
+}
+@-moz-keyframes
+bird2 {
+ 0% {bottom: -220%;}
+ 50% {bottom: -250%;}
+ 100% {bottom: -220%;}
+}
+@-o-keyframes
+bird2 {
+ 0% {bottom: -220%;}
+ 50% {bottom: -250%;}
+ 100% {bottom: -220%;}
+}
+@-ms-keyframes
+bird2 {
+ 0% {bottom: -220%;}
+ 50% {bottom: -250%;}
+ 100% {bottom: -220%;}
+}
+@keyframes
+bird2 {
+ 0% {bottom: -220%;}
+ 50% {bottom: -250%;}
+ 100% {bottom: -220%;}
+}
+
+/* bird3 */
+
+ @-webkit-keyframes
+bird3 {
+ 0% {bottom: -220%;}
+ 50% {bottom: -250%;}
+ 100% {bottom: -220%;}
+}
+@-moz-keyframes
+bird3 {
+ 0% {bottom: -220%;}
+ 50% {bottom: -250%;}
+ 100% {bottom: -220%;}
+}
+@-o-keyframes
+bird3 {
+ 0% {bottom: -220%;}
+ 50% {bottom: -250%;}
+ 100% {bottom: -220%;}
+}
+@-ms-keyframes
+bird3 {
+ 0% {bottom: -220%;}
+ 50% {bottom: -250%;}
+ 100% {bottom: -220%;}
+}
+@keyframes
+bird3 {
+ 0% {bottom: -220%;}
+ 50% {bottom: -250%;}
+ 100% {bottom: -220%;}
+}
+
+/*--------------*/
+#topBg_mob {
+	left: 0%;
+	width: 100%;
+}
+
+#doorOpen_mob {
+	left: 66.88%;
+	width: 27.4%;
+	opacity: 0;
+}
+
+#r1_mob {
+	left: 36.3%;
+	width: 13.9%;
+	bottom: 150%;
+}
+
+#u1_mob {
+	left: 50%;
+	width: 12.5%;
+	bottom: 150%;
+}
+
+#r2_mob {
+	left: 62%;
+	width: 14.7%;
+	bottom: 150%;
+}
+
+#u2_mob {
+	left: 76.9%;
+	width: 12.2%;
+	bottom: 150%;
+}
+
+#p_mob {
+	left: 8.44%;
+	width: 4.9%;
+}
+
+#r_mob {
+	left: 12.03%;
+	width: 4.6%;
+}
+
+#o_mob {
+	left: 15.78%;
+	width: 5.2%;
+}
+
+#f_mob {
+	left: 6.41%;
+	width: 5.5%;
+}
+
+#i_mob {
+	left: 10.94%;
+	width: 3.3%;
+}
+
+#l_mob {
+	left: 12.97%;
+	width: 4.1%;
+}
+
+#e_mob {
+	left: 15.47%;
+	width: 6.3%;
+}
+
+#c1_mob {
+	left: 73.91%;
+	width: 4.1%;
+}
+
+#o_contact_mob {
+	left: 77.5%;
+	width: 4.4%;
+}
+
+#n_mob {
+	left: 81.25%;
+	width: 4.6%;
+}
+
+#t1_mob {
+	left: 85.31%;
+	top: auto;
+	width: 3.8%;
+}
+
+#a_mob {
+	left: 88.44%;
+	width: 4.6%;
+}
+
+#c2_mob {
+	left: 92.19%;
+	width: 4.4%;
+}
+
+#t2_mob {
+	left: 95.16%;
+	width: 3.9%;
+}
+
+#b_mob2 {
+	left: 19.53%;
+	width: 5.9%;
+}
+
+#l_blog_mob {
+	left: 23.75%;
+	width: 5.3%;
+}
+
+#o_blog_mob {
+	left: 18.59%;
+	width: 5.5%;
+}
+
+#g_mob {
+	left: 22.19%;
+	width: 6.6%;
+}
+
+#range_contact_mob,
+#mask_contact_mob {
+	left: 74.06%;
+	width: 25.2%;
+}
+
+#range_blog_mob,
+#mask_blog_mob {
+	left: 18.59%;
+	width: 10.8%;
+}
+
+#range_profile_mob,
+#mask_profile_mob {
+	left: 43.01px;
+	width: 15.3%;
+}
+/*profile and contact*/
+/** inputs and textarea**/
+/** inputs and textarea**/
+input:not([type="submit"]),
+textarea{
+	font-family: "Meiryo","Meiryo UI","Hiragino Kaku Gothic Pro W3","HiraKakuPro-W3","Hiragino Kaku Gothic Pro","MS UI Gothic","MS P Gothic","MS Gothic";
+	outline:none;
+	display:block;
+	width:380px;
+	padding:4px 8px;
+	border:1px dashed #DBDBDB;
+	color:#3F3F3F;
+	border-radius:2px;
+	-moz-box-shadow:0 0 0 #fff inset;
+	-webkit-box-shadow:0 0 0 #fff inset;
+	box-shadow:0 0 0 #fff inset;
+	-moz-transition:background 0.3s linear,box-shadow 0.5s linear, border 0.7s linear;
+	-webkit-transition:background 0.3s linear,box-shadow 0.5s linear, border 0.7s linear;
+	transition:background 0.3s linear,box-shadow 0.5s linear, border 0.7s linear;
+}
+textarea {
+	width: 648px;
+}
+input:not([type="submit"]):active,
+textarea:active,
+input:not([type="submit"]):focus,
+textarea:focus,
+input:not([type="submit"]):hover,
+textarea:hover{
+	background:#F7F7F7;
+	border:dashed 1px #969696;
+	-moz-box-shadow:2px 2px 7px #E8E8E8 inset;
+	-webkit-box-shadow:2px 2px 7px #E8E8E8 inset;
+	box-shadow:2px 2px 7px #E8E8E8 inset;
+}
+input:not([type="submit"]) {
+	height: 20px;
+}
+
+textarea{
+	min-height:150px;
+	resize:vertical
+}
+/* placeholder */
+::-webkit-input-placeholder  {
+	color:#bababa;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+	color:#bababa;
+}
+form p label{
+	color:#7f7e7e;
+	font-size: 12px;
+	-webkit-transition: color 0.6s ease;
+	-moz-transition: color 0.6s ease;
+	transition: color 0.6s ease;
+	padding-bottom: 3px;
+}
+form p label:hover{
+	color:#191919;
+}
+form p > $input:hover {
+	color:#191919;
+}
+form p {
+	margin-bottom:20px;
+}
+.indication{
+	color:#878787;
+	font-size:12px;
+	font-style:italic;
+	text-align:right;
+	padding-right:10px;
+}
+.required{
+	color:#E5224C;
+}
+/** Styling the send button **/
+input[type=submit]{
+	margin-left: 551px;
+	cursor: pointer;
+	background: none;
+	border: none;
+	color: #767676;
+	font-size: 12px;
+	padding: 10px 16px;
+	border: 1px dashed #cecece;
+	text-shadow: 0px 1px 1px #e0e0e0;
+	background: rgb(240,240,240);
+	background: linear-gradient(top, rgba(240,240,240,1) 1%,rgba(235,235,235,1) 100%);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	behavior: url("/js/PIE.htc") ;
+	-webkit-transition: all 0.2s linear, visibility 0s ease;
+	-moz-transition: all 0.2s linear, visibility 0s ease;
+	-o-transition: all 0.2s linear, visibility 0s ease;
+	transition: all 0.2s linear, visibility 0s ease;
+	display: inline;
+	float:right;
+}
+
+input[type=submit]:hover{
+	color:#686868;
+	border-color: #b8b8b8;
+	background: linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(235,235,235,1) 100%);
+}
+
+input[type=submit]:active,
+input[type=submit]:focus{
+	position:relative;
+	top:1px;
+	color:#515151;
+	background: linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(242,242,242,1) 100%);
+}
+input#sendBtn {
+	margin-left: 542px;
+}
+/* End comments
+------------------------------------------------------------ */
+/* contact form
+------------------------------------------------------------------------- */
+article.contact {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	background: url(../images/bgContact.jpg) repeat;
+	background-position: 0 0;
+	border:solid 0px transparent;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	visibility: hidden;
+	overflow: visible;
+}
+article.contact h1 {
+	background:url("../images/contactform.png") no-repeat;
+}
+article.contact p.bird3 {
+	width: 90px;
+	height: 108px;
+	position: absolute;
+	top: -81px;
+	left: -45px;
+	background: url(../images/bird03.png) no-repeat;
+}
+.csstransitions article.contact p.active,
+.csstransitions article.contact p:hover {
+	-moz-animation: fly3 0.3s steps(4) 0s infinite;
+	-webkit-animation: fly3 0.3s steps(4) 0s infinite;
+	-o-animation: fly3 0.3s steps(4) 0s infinite;
+	-ms-animation: fly3 0.3s steps(4) 0s infinite;
+	animation: fly3 0.2s steps(4) 0s infinite;
+}
+@-moz-keyframes fly3 {
+    from { background-position: 0 0; }
+    to { background-position: -360px 0; }
+}
+
+@-webkit-keyframes fly3 {
+    from { background-position: 0 0; }
+    to { background-position: -360px 0; }
+}
+article.contactActive {
+	visibility: visible;
+	-webkit-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-moz-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-pie-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+}
+.csstransitions article.contactActive {
+	top: 400px;
+	left: 50%;
+}
+article.contact form input([type=submit]) {
+	margin-left: 542px;
+}
+.closeBtn {
+	width: 40px;
+	height: 41px;
+	cursor: pointer;
+	background: url(../images/btnClose.png) no-repeat;
+	background-position: -40px 0;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+.closeBtn:hover {
+	background-position: 0 0;
+}
+input[type=radio],
+.touch input[type=radio] {
+	display:none;
+}
+.no-multiplebgs input[type=radio] {
+	display:block;
+	width: 0!important;
+	height: 0!important;
+	padding: 0!important;
+	border: 0 #FFF none!important;
+}
+/* profile
+------------------------------------------------------------------------- */
+article.profile {
+	top: 100%;
+	left: 50%;
+	border:solid 0px transparent;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	visibility: hidden;
+	overflow: visible;
+}
+.no-multiplebgs article.profile {
+	background: url(../images/bgContact.jpg) repeat;
+	background-position: 0 0;
+}
+article.profile h1 {
+	margin-bottom: 50px;
+	background: url("../images/profileTitle.png") no-repeat;
+}
+article.profile h1 span {
+	display: block;
+	height: 0;
+}
+article.profile p {
+	font-size: 12px;
+	line-height: 2.0;
+	padding: 0 0 10px 0;
+}
+article.profile p a {
+	cursor: pointer;
+}
+.csstransitions article.profile p.active,
+.csstransitions article.profile p.bird3:hover {
+	-moz-animation: fly3 0.3s steps(4) 0s infinite;
+	-webkit-animation: fly3 0.3s steps(4) 0s infinite;
+	-o-animation: fly3 0.3s steps(4) 0s infinite;
+	-ms-animation: fly3 0.3s steps(4) 0s infinite;
+	animation: fly3 0.2s steps(4) 0s infinite;
+}
+article.profileActive {
+	visibility: visible;
+	-webkit-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-moz-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-pie-box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.17), 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+}
+.csstransitions article.profileActive {
+	top: 50%;
+	left: 50%;
+}
+article.profile p.bird3 {
+	width: 90px;
+	height: 108px;
+	position: absolute;
+	top: -81px;
+	left: -45px;
+	background: url(../images/bird03.png) no-repeat;
+}
+.csstransitions article.end {
+	top: -10%;
+	left: -10%;
+}
+#content input.ie7_class257{
+	display:none!important;
+}
+div.wpcf7-mail-sent-ok {
+margin-top: 100px !important;
+margin-bottom: 150px !important;
+margin-left: auto !important;
+margin-right: auto !important;
+text-align: center !important;
+padding: 10px !important;
+}
+@-webkit-keyframes bird2 {
+ 0% {bottom: -240%;}
+ 50% {bottom: -260%;}
+ 100% {bottom: -240%;}
+}
+@-moz-keyframes bird2 {
+ 0% {bottom: -260%;}
+ 50% {bottom: -280%;}
+ 100% {bottom: -260%;}
+}
+@-o-keyframes bird2 {
+ 0% {bottom: -260%;}
+ 50% {bottom: -280%;}
+ 100% {bottom: -260%;}
+}
+@-ms-keyframes bird2 {
+ 0% {bottom: -260%;}
+ 50% {bottom: -280%;}
+ 100% {bottom: -260%;}
+}
+@keyframes bird2 {
+ 0% {bottom: -260%;}
+ 50% {bottom: -280%;}
+ 100% {bottom: -260%;}
+}
+article.contact,
+article.pofile {
+	width: 0%;
+	padding: 25px;
+	margin-top: 0;
+	margin-left: -44%;
+	display: none;
+	z-index: 8000;
+}
+article.profile {
+	background: url(../images/bgContact.jpg) repeat;
+	background-position: 0 0;
+	position: absolute;
+}
+.csstransitions article.contact,
+.csstransitions article.profile {
+	width: 0%;
+	height: 0;
+	padding: 0;
+	margin-top: 0;
+	margin-left: -44%;
+	display: block;
+	-webkit-transition: left 0.6s ease, top 0.6s 0.1s ease;
+	-moz-transition: left 0.6s ease, top 0.6s 0.1s ease;
+	-o-transition: left 0.6s ease, top 0.6s 0.1s ease;
+	transition: left 0.6s ease, top 0.6s 0.1s ease;
+	z-index: 8000;
+}
+.csstransitions article.contact:not(.contactActive) *,
+.csstransitions article.profile:not(.profileActive) * {
+	display:none;
+}
+/*article.contactActive {
+	top: 100px;
+	height: auto;
+	padding: 25px;
+	visibility: visible;
+	left: 50%;
+	width: 80%;
+	display: block;
+}*/
+article.profileActive,
+article.contactActive {
+	visibility: visible;
+	-webkit-box-shadow: 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-moz-box-shadow: 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-pie-box-shadow: 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	box-shadow: 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+}
+.csstransitions article.contactActive,
+.csstransitions article.profileActive {
+	top: 100px;
+	height: auto;
+	padding: 25px;
+	padding-right: 17px;
+	visibility: visible;
+	left: 50%;
+	width: 80%;
+	display: block;
+	-webkit-box-shadow: 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-moz-box-shadow: 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	-pie-box-shadow: 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+	box-shadow: 2px 7px 15px 1px rgba(0, 0, 0, 0.17);
+}
+article.profile h1 {
+margin-bottom: 0px;
+}
+.csstransitions article.end {
+	top: 0;
+	left: -50%;
+}
+.closeBtn {
+	background: url(../images/btnCloseWood_hir.png) no-repeat;
+	background-position: 0 0;
+	background-size: 100%;
+	right: auto;
+	left: -20px;
+	top: -20px;
+}
+input:not([type="submit"]), textarea, .textarea-wrapper {
+	width: 100%;
+	margin-right: 20px;
+}
+textarea {
+width: 100%;
+}
+article.contact p.bird3,
+article.profile p.bird3 {
+left: 50%;
+margin-left: -45px;
+}
+#formInner {
+	margin-right: 20px;
+}
+.indication {
+	margin-right: -20px;
+}
+input[type=submit] {
+margin-right: -20px;
+}

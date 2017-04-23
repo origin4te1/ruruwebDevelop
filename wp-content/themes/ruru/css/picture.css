@@ -1,0 +1,13 @@
+@charset "utf-8";
+body {
+	background-image: none;
+}
+
+.bird2 {
+	background-image: url(../images/nav6Photo.png);
+}
+
+#socialBoxAlt {
+	left: 18.6%;
+	right: auto;
+}

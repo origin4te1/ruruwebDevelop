@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+#header div#gNav #gNavInner {
+	background:  url(../images/cloudOff.png) repeat-x bottom;
+}
+#header div#gNav #gNavInner:hover,
+#header div#gNav.hover #gNavInner {
+	background:  url(../images/cloudOn.png) repeat-x bottom;
+}
+footer small {
+	text-shadow: 0 0 10px rgb(0, 70, 6);
+	behavior: url(/wp-content/themes/ruru/PIE.htc);
+}
