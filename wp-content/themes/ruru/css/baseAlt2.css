@@ -534,6 +534,13 @@ a.socialIcon {
 .tw:hover {
 	background-position: -40px 0;
 }
+.isg {
+	background-image: url(../images/socialIconIsg_alt.png);
+}
+.isg:hover {
+	background-position: -40px 0;
+}
+
 
 /* mainWrapper
 ------------------------------------------------------------------------- */
